@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body bgcolor="orange" id="CustManageBody">
+
+    <p id="lblCustomerManagement">Order Management</p>
+    <div class="container">
+        <div class="order-form">
+            <h2 id="lblPlaceOrder">Place Order</h2>
+            <form id="orderForm">
+                <label for="orderId">Order ID:</label>
+                <input type="text" id="orderId" placeholder=" Order ID" required><br>
+                
+                <label for="orderDate">Order Date:</label>
+                <input type="text" id="orderDate" placeholder="Order Date" required><br>
+                
+                <label for="orderQuantity">Order Quantity:</label>
+                <input type="text" id="orderQuantity" placeholder="Order Quantity" required><br>
+                
+                <label for="itemID">Item ID:</label>
+                <input type="text" id="itemID" placeholder="Item ID" required><br>
+
+                <label for="customerID">Customer Id:</label>
+                <input type="text" id="customerID" placeholder="Customer ID" required><br>
+
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" placeholder="Amount" required><br>
+                
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+
+        <div class="order-list">
+            <h2 id="lblorderListForm">Order List</h2>
+            <ul id="orderList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="view_order.js"></script>
+</body>
+</html>
